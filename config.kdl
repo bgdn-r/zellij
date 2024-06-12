@@ -158,6 +158,7 @@ keybinds {
         bind "Alt -" { Resize "Decrease"; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
+        bind "Alt ;" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
     }
     shared_except "normal" "locked" {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
@@ -228,14 +229,14 @@ plugins {
 //   - true (default)
 //   - false
 //
-pane_frames false
+pane_frames true
 
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
 //   - true (default)
 //   - false
 //
-// auto_layout true
+auto_layout false
 
 // Whether sessions should be serialized to the cache folder (including their tabs/panes, cwds and running commands) so that they can later be resurrected
 // Options:
@@ -296,7 +297,6 @@ themes {
 //
 
 // theme "default"
-// theme "rosepine"
 theme "github"
 
 // The name of the default layout to load on startup
@@ -316,7 +316,7 @@ default_layout "compact"
 //   - true (default)
 //   - false
 //
-mouse_mode false
+mouse_mode true
 
 // Configure the scroll back buffer size
 // This is the number of lines zellij stores for each pane in the scroll back
