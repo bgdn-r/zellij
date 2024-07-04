@@ -287,8 +287,6 @@ themes {
         cyan    "#76e3ea"  // cyan.base
         black   "#0d1117"  // black.base
         white   "#8b949e"  // white.base
-        /*
-        */
     }
 }
 
